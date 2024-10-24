@@ -226,7 +226,7 @@ if (isset($_SESSION['username'])) {
 }
 
 
-// Unset the 'email' session variable
+// Unset the specific session variable
 unset($_SESSION['email']);
 
 // Unset all of the session variables
