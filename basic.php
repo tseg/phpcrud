@@ -207,3 +207,30 @@ if (isset($_COOKIE['name'])) {
 
 // Delete a cookie
 setcookie('name', '', time() - 86400);
+
+
+/////////////////////////////////////////////Session ///////////////////////////////////////
+
+session_start(); // Set Session variable. Must be called before accessing any session data
+
+// Set session variables
+$_SESSION['username'] = 'John Doe';
+$_SESSION['email'] = 'johndoe@mail.com';
+
+// Check if the session variable is set
+if (isset($_SESSION['username'])) {
+  echo "Welcome " . $_SESSION['username'];
+  echo "<br>Your email is: " . $_SESSION['email'];
+} else {
+  echo "No session found. Please log in.";
+}
+
+
+// Unset the 'email' session variable
+unset($_SESSION['email']);
+
+// Unset all of the session variables
+session_unset();
+
+// Destroy the session
+session_destroy();
