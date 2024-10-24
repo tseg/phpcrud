@@ -1,5 +1,6 @@
 <?php
 include 'db_connection.php';
+//update row of database table
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];

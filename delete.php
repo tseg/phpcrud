@@ -1,6 +1,7 @@
 <?php
 include 'db_connection.php';
 
+//delete row from database in to database table
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 

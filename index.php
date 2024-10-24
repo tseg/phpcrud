@@ -1,4 +1,5 @@
 <?php
+//HTML and Php code
 include 'db_connection.php';
 
 

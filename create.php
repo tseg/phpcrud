@@ -1,6 +1,6 @@
 <?php
 include 'db_connection.php';
-
+//insert in to database table
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $data = array(
         'first_name' => $_POST['first_name'], 

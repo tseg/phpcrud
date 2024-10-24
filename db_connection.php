@@ -1,5 +1,5 @@
 <?php
-// db.php
+// database connection
 $host = 'localhost';
 $dbname = 'php_crud_db';
 $username = 'root';
